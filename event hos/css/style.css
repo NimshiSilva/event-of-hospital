@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+body{
+    line-height: 1.8;
+    color: #898fa1;
+    font-size: 15px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #11245A;
+}
+a{
+    font-weight: 700;
+    transition: all 0.4s ease;
+}
+small{
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+section{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.navbar{
+    border-bottom: 1px solid rgba(0,0, 0, 0.1);
+}
+
+.logo-text{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #11245A ;
+}
+
+.navbar .nav-link{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing:1px ;
+}
+.navbar .nav-link.active{
+    color: rgb(114, 112, 207);
+}
+#home{
+    background-image: url(../img/cover.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+#home p{
+    font-size: 16px;
+    margin: 18px auto;
+}
+.btn{
+   font-weight: 700;
+   font-size: 12px;
+   text-transform: uppercase;
+   padding: 12px 28px;
+   border-radius:8px ;
+}
+.btn-brand{
+    background-color: rgb(134, 134, 236);
+    color: #fff;
+}
+.btn-brand:hover{
+
+    color: #fff;
+}
+.section-intro {
+    text-align:center ;
+    margin-bottom: 60px;
+}
+.section-intro .hline{
+    width: 120px;
+    height: 2px;
+    background-color: rgba(0,0,0,0.1);
+    margin:16px auto 0 auto;
+}
+.title-sm{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.icon-box{
+    width: 60px;
+    height: 60px;
+    background-color: steelblue;
+    color: #fff;
+    border-radius:4px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+.gallary-item{
+    overflow: hidden;
+    position: relative;
+
+}
+.gallary-item img,
+.gallary-item .gallary-overlay{
+    transition: all 0.4s ease;
+}
+
+.gallary-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 36, 90,0.8);
+    display: flex;
+    align-items: flex-end;
+    padding:30px ;
+    opacity: 0;
+
+}
+.gallary-overlay h3,
+.gallary-overlay h6{
+    color: #fff;
+}
+.gallary-item:hover .gallary-overlay{
+  opacity: 1;
+
+}
+.gallary-item:hover img{
+    transform: scale(1.1);
+}
+img{
+    width: 100%;
+}
